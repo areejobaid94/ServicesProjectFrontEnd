@@ -295,13 +295,13 @@
             console.log("dataToSave",dataToSave);
             $.ajax({
               type: "POST",
-              url: "https://localhost:5001/api/Interest",
+              url: "https://localhost:5001/api/UserSeviceInterest",
               // The key needs to match your method's input parameter (case-sensitive).
               data: JSON.stringify(dataToSave),
-              contentType: "application/json;",
+              contentType: "application/json; charset=utf-8",
               dataType: "json",
               success: function(data){
-                alert("Data Saved");
+                alert("Done")
               },
               error: function(errMsg) {
                   console.log(errMsg);
@@ -384,7 +384,7 @@
 
         var p = document.createElement('p');
         p.className = "card-text";
-        var node = document.createTextNode("Name: "+ data[i].user.name + ", Service: " + data[i].service.serviceName  + ", Interest: " + data[i].interest.interestName);
+        var node = document.createTextNode("Name: "+ data[i].user.name + ", "+" Service: " + data[i].service.serviceName  + ", Interest: " + data[i].interest.interestName);
         p.appendChild(node);
         
         DivIn.append(p);
