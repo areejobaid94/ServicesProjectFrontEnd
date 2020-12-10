@@ -1,10 +1,10 @@
-# Project Name : Talentera
+# Project Name : ServicesProject
 
 **Author**: Areej Obaid
 **Version**: 1.0.0 
 
 ## Overview
-Responsive website
+Services website FrontEnd
 
 ### Deployment:
 * [GitHub Page](https://areejobaid94.github.io/ServicesProjectFrontEnd/Home/)
