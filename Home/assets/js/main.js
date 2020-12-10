@@ -384,7 +384,7 @@
 
         var p = document.createElement('p');
         p.className = "card-text";
-        var node = document.createTextNode("Name: "+ data[i].user.name + ", "+"Service: " + data[i].service.serviceName  + ", " + "Interest: " + data[i].interest.interestName);
+        var node = document.createTextNode("Name: "+ data[i].user.name + ", Service: " + data[i].service.serviceName  + ", Interest: " + data[i].interest.interestName);
         p.appendChild(node);
         
         DivIn.append(p);
