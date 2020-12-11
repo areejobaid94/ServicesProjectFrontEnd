@@ -291,11 +291,12 @@
           console.log("userServiecesData",userServiecesData);
           r.on('click', function(e) {
             e.preventDefault();
+            alert("Done");
             var dataToSave = {"UserId":userServiecesData.user.userId,"ServiceIds": selecterServices,"InterestId":e.target.id.split(',')[1]}
             console.log("dataToSave",dataToSave);
             $.ajax({
               type: "POST",
-              url: "https://localhost:5001/api/UserSeviceInterest",
+              url: "https://localhost:5001/api/UserSeviceInterest/save",
               // The key needs to match your method's input parameter (case-sensitive).
               data: JSON.stringify(dataToSave),
               contentType: "application/json; charset=utf-8",
@@ -369,6 +370,7 @@
       alert('required field');
     }
   })
+  console.log('data');
   $.ajax({
     type: "GET",
     url: "https://localhost:5001/api/UserSeviceInterest",
