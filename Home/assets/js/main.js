@@ -291,7 +291,6 @@
           console.log("userServiecesData",userServiecesData);
           r.on('click', function(e) {
             e.preventDefault();
-            alert("Done");
             var dataToSave = {"UserId":userServiecesData.user.userId,"ServiceIds": selecterServices,"InterestId":e.target.id.split(',')[1]}
             console.log("dataToSave",dataToSave);
             $.ajax({
